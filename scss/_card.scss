@@ -1,0 +1,113 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  &-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+
+    .projects-description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      font-size: 15px;
+      padding-left: 20px;
+      background: rgba(0, 0, 0, 0.8);
+
+      .project-type {
+        font-family: 'Shadows Into Light', cursive;
+        color: #4f0051;
+        line-height: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: 36px;
+        text-transform: capitalize;
+        color: rgb(216, 210, 210);
+      }
+
+      p {
+        line-height: 1.5;
+        margin-bottom: 10px;
+        max-width: 90%;
+      }
+
+      .ul-container {
+        width: 65%;
+        ul {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          max-height: 70px;
+          color: rgb(173, 169, 169);
+          li {
+            list-style-type: none;
+            line-height: 1.4;
+          }
+        }
+      }
+
+      .project-btns {
+        display: inline-flex;
+
+        a {
+          margin-right: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          background: $secondary-color;
+          padding: 5px 10px;
+          border: 2px solid $secondary-color;
+          border-radius: 2px;
+          text-decoration: none;
+          font-weight: 500;
+          margin-top: 20px;
+          color: #fff;
+          letter-spacing: 2px;
+          transition: all 0.5s ease;
+          i {
+            font-size: 20px;
+          }
+
+          &:hover {
+            background: transparent;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .projects-image {
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        background: -webkit-linear-gradient(
+          rgba(34, 1, 34, 0.9),
+          rgba(134, 5, 134, 0.5),
+          rgba(34, 1, 34, 0.9)
+        );
+        transition: opacity 0.5s ease;
+      }
+      .overlay:hover {
+        opacity: 0;
+      }
+    }
+  }
+}
