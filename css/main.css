@@ -284,6 +284,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
+  z-index: 99;
   background: -webkit-linear-gradient(rgba(34, 1, 34, 0.9), rgba(134, 5, 134, 0.5), rgba(34, 1, 34, 0.9));
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
@@ -1302,9 +1303,7 @@ footer .top-btn:hover {
     z-index: 3;
   }
   #work .projects-item .projects-description:hover, #work .projects-item .projects-description:focus {
-    opacity: 0;
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    opacity: 1;
   }
   #work .projects-item .projects-description-touch {
     opacity: 0;
@@ -1345,6 +1344,9 @@ footer .top-btn:hover {
     -o-object-fit: contain;
        object-fit: contain;
     z-index: 200;
+  }
+  #work .projects-item .projects-image .overlay {
+    z-index: -1;
   }
   #skills {
     padding-bottom: 0;
