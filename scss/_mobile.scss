@@ -320,6 +320,7 @@
       }
     }
   }
+
   #skills {
     .skills {
       width: 100%;
@@ -511,8 +512,8 @@
 
         &:hover,
         &:focus {
-          opacity: 0;
-          transform: scale(0.98);
+          opacity: 1;
+          //transform: scale(0.98);
         }
 
         &-touch {
@@ -563,6 +564,10 @@
           height: 100%;
           object-fit: contain;
           z-index: 200;
+        }
+
+        .overlay {
+          z-index: -1;
         }
       }
     }
