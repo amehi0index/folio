@@ -26,7 +26,7 @@ $background-opacity: 0.9;
 }
 
 @mixin mediaXl {
-  @media screen and (max-width: 1171px) {
+  @media screen and (max-width: 1280px) {
     @content;
   }
 }

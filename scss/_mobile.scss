@@ -33,6 +33,25 @@
   }
 }
 
+//Large Tablet
+@include mediaXl {
+  .navbar {
+    &-brand {
+      h1 {
+        padding-top: 7px;
+        font-size: 30px;
+      }
+    }
+  }
+
+  section {
+    .container {
+      padding: 0 30px;
+      // padding-left: 50px;
+    }
+  }
+}
+
 //TABLET
 @include mediaMd {
   // html,
@@ -61,6 +80,7 @@
         width: calc(62.2px - 10px);
         height: calc(44.01px - 10px);
       }
+
       h1 {
         padding-top: 7px;
         font-size: 32px;
