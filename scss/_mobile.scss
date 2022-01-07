@@ -47,7 +47,26 @@
   section {
     .container {
       padding: 0 30px;
-      // padding-left: 50px;
+    }
+  }
+
+  #about {
+    .container {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    .image-container {
+      margin: 0 25px 0 0;
+      .outer {
+        height: 350px;
+        width: 350px;
+      }
+
+      .inner {
+        height: 270px;
+        width: 270px;
+      }
     }
   }
 }
@@ -69,21 +88,11 @@
 
   //NAVBAR
   .navbar {
-    &-brand {
-      width: 100%;
-      justify-content: flex-start;
-      align-items: center;
-      padding-left: 20px;
+    .navbar {
+      background-color: transparent;
 
-      .logo {
-        margin: 0;
-        width: calc(62.2px - 10px);
-        height: calc(44.01px - 10px);
-      }
-
-      h1 {
-        padding-top: 7px;
-        font-size: 32px;
+      &-brand {
+        display: none;
       }
     }
   }
@@ -174,36 +183,39 @@
     .hide-footer {
       display: inline-block;
       width: 80vw;
+      margin-left: 40px;
 
-      a {
-        display: inline-block;
-        padding: 0 10px;
-        margin: 30px 5px;
-        text-decoration: none;
-        color: #ffff;
-        &:hover,
-        &:focus,
-        &:active {
-          color: $secondary-color;
-          @include easeOut();
-        }
+      .mobile-social-icons {
+        a {
+          display: inline-block;
+          padding: 0 10px;
+          margin: 30px 5px;
+          text-decoration: none;
+          color: #ffff;
+          &:hover,
+          &:focus,
+          &:active {
+            color: $secondary-color;
+            @include easeOut();
+          }
 
-        .text-span {
-          font-size: 18px;
-          color: $secondary-color;
-        }
+          .text-span {
+            font-size: 16px;
+            color: $secondary-color;
+          }
 
-        .icon-span {
-          font-size: 18px;
-          border: 2px solid $secondary-color;
-          border-radius: 2px;
-          padding: 5px 10px;
-          height: 2rem;
-          width: 2.5rem;
-          text-align: center;
+          .icon-span {
+            font-size: 16px;
+            border: 2px solid $secondary-color;
+            border-radius: 2px;
+            padding: 5px 8px;
+            height: 2rem;
+            width: 2.5rem;
+            text-align: center;
 
-          i {
-            font-size: 24px;
+            i {
+              font-size: 18px;
+            }
           }
         }
       }
@@ -278,19 +290,6 @@
       margin: auto;
       width: 35%;
       min-height: 35%;
-
-      .outer {
-        height: 350px;
-        width: 350px;
-      }
-
-      .inner {
-        height: 270px;
-        width: 270px;
-      }
-
-      .img {
-      }
     }
   }
 
@@ -366,16 +365,6 @@
   body {
     //overflow: hidden;
     scroll-padding-top: 100px;
-  }
-
-  //NAVBAR
-  .navbar {
-    //justify-content: space-between;
-    background-color: transparent;
-
-    &-brand {
-      display: none;
-    }
   }
 
   //MENU OVERLAY
