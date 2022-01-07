@@ -206,14 +206,20 @@ body {
       border-radius: 2px;
       padding: 15px 20px;
 
-      i {
-        font-size: 32px;
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 5px;
-      }
+        i {
+          font-size: 32px;
+          //margin-bottom: 5px;
+        }
 
-      img {
-        width: 40px;
-        padding: 10px 0;
+        img {
+          width: 40px;
+          padding: 5px 0;
+        }
       }
 
       .badge {
