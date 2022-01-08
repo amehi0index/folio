@@ -96,7 +96,7 @@
   text-decoration: none;
 }
 
-.navbar-menu .menu-position ul li a:hover, .navbar-menu .menu-position ul li a:focus {
+.navbar-menu .menu-position ul li a:hover {
   color: #910394;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -111,8 +111,7 @@
 }
 
 .navbar-menu .menu-position ul .current {
-  font-weight: 700;
-  color: #610163;
+  color: #910394;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -690,7 +689,7 @@ body {
 
 #contact .social-icons {
   position: fixed;
-  top: 50%;
+  top: 65%;
   right: 4.6%;
   display: -webkit-box;
   display: -ms-flexbox;
