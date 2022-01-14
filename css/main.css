@@ -354,7 +354,25 @@ body {
 
 .hero-container p {
   color: #b8b3b3;
-  width: 600px;
+  width: 60%;
+}
+
+.hero-container .hero-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-container .hero-btns .contact-btn {
+  background: transparent;
+  border: 2px solid #610163;
+  color: #610163;
+  margin-left: 15px;
+}
+
+.hero-container .hero-btns .contact-btn:hover {
+  background: #4f0051;
+  color: #fff;
 }
 
 .container {
@@ -668,7 +686,7 @@ body {
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  background: #4f0051;
+  background: #610163;
   outline: none;
   border: 2px solid #610163;
   padding: 12px 20px;
