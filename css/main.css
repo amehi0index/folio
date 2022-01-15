@@ -719,7 +719,7 @@ body {
   height: 60%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 12px;
+  font-size: 14px;
   color: #910394;
   letter-spacing: 2px;
   line-height: 1;
@@ -771,7 +771,7 @@ body {
 
 #contact .social-icons a .icon-span {
   font-size: 18px;
-  border: 2px solid #610163;
+  border: 3px solid #610163;
   border-radius: 2px;
   padding: 6px;
   text-align: center;
