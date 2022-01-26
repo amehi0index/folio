@@ -4,7 +4,7 @@ const descriptions = document.querySelectorAll(".projects-description");
 const sections = document.querySelectorAll("section");
 const scrollToTopBtn = document.querySelector("#top")
 const mainMenu = document.querySelector('.menu-main');
-const mainMenuLinks = document.querySelectorAll('.menu-main li')
+const mainMenuLinks = document.querySelectorAll('.menu-main li a')
 const contactForm = document.querySelector('.contact-form')
 let selected;
 
@@ -14,7 +14,9 @@ contactForm.addEventListener('submit', clearContactForm)
 //Add or remove current class from menu item
 for (const link of mainMenuLinks) {
 
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
+    const href = link.getAttribute("href")
+  
     for (const link of mainMenuLinks) {
       link.classList.remove('current')
     }
@@ -34,6 +36,7 @@ for (const link of links) {
 function clickHandler(e) {
   e.preventDefault();
   const href = this.getAttribute("href");
+  console.log(href)
   const offsetTop = document.querySelector(href).offsetTop
 
   scroll({

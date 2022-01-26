@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" ontouchmove>
+<html lang="en" prefix="og: http://ogp.me/ns#" ontouchmove>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="Amelia Hill Portfolio Website" />
+    <meta property="og:image" content="https://ameliahill.me/img/folio.png">
+    <meta name="author" content="Amelia Hill" />
+    <meta property="og:description" content="Portfolio Website for Frontend Web Developer Amelia Hill"/>
+    <meta property="og:url" content="https://ameliahill.me" />
     <title>Folio</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -35,32 +40,42 @@
                 <ul class="menu-main">
                     <li class="navbar-item">
                         <a href="#page-top" class="navbar-link">
+                            <span class="hide">
                             <i class="fas fa-home hide"></i>
+                            </span>
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="navbar-item">
                         <a href="#about" class="navbar-link">
+                            <span class="hide">
                             <i class="fas fa-user-circle hide"></i>
+                            </span>
                             <span>About</span>
                         </a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#work" class="navbar-link">
+                        <a href="#projects" class="navbar-link">
+                            <span class="hide">
                             <i class="fas fa-project-diagram hide"></i>
-                        <span>Projects</span> 
+                            </span>
+                            <span>Projects</span> 
                         </a>
                     </li>
                     <li class="navbar-item">
                         <a href="#skills" class="navbar-link">
+                            <span class="hide">
                             <i class="fas fa-tools hide"></i>
-                        <span>Skills</span> 
+                            </span>
+                            <span>Skills</span> 
                         </a>
                     </li>
                     <li class="navbar-item">
                         <a href="#contact" class="navbar-link">
+                            <span class="hide">
                             <i class="far fa-envelope hide color"></i>
-                        <span>Contact </span> 
+                            </span>
+                            <span>Contact </span> 
                         </a>
                     </li>
                 </ul>
@@ -86,61 +101,70 @@
         <div class="hero-container"> 
             <h1 class="lg-heading" >Hello,</h1>
             <h1 class="lg-heading" >I'm Amelia.</h1>
-            <h3 >Front-End <span>Web</span> Developer</h3>
-                <p class="" >I am a junior web developer and programmer based in Los Angeles, CA who enjoys 
-                designing and building interactive web applications. 
+            <h3 >Frontend <span>Web</span> Developer</h3>
+                <p class="" >I am a junior web developer and programmer based in Los Angeles, CA who builds
+                thoughtful, engaging and aesthetically pleasing interactive web applications. If you are in search of a frontend developer who enjoys solving problems and is eager to learn and contribute, I'd love to hear from you!
                 </p>
-            <a href="#work" class="container-btn" >Projects</a> 
+            <div class="hero-btns">
+                <a href="#projects" class="container-btn projects-btn" >Projects</a>  
+                <a href="#contact" class="container-btn contact-btn" >Contact</a> 
+            </div>
         </div>  
     </header>
 
     <main>
         <section class="section" id="about" >
             <div class="container" data-aos="fade-up" data-aos-duration="1500" >
-                    <h1 class="lg-heading">About<span class="sm-heading"> | Let Me Tell You</span></h1>
-                    <p> I am currently a computer programming student, with a prior educational background in linguistics, who enjoys solving problems and making things. From building web applications to crafting artisan hot sauces, I enjoy the challenge of taking seemingly disparate or random elements and creating a synergistic result.
-                
-                    When not studying or making things, I can be found exploring the nearest mountain trail or canoodling on the couch with my feline overlords, Darth and Vader.</p>
-
-                    <a href="#!" class="container-btn">Resume</a> 
-            </div> 
-            <div class="image-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                <div class="outer"></div>
-                <div class="inner"></div>
-                <div class="about-img"><img src="/img/amy2.png" alt="" class="about-img"></div>
+                <div class="about-text">
+                    <h1 class="lg-heading">About<span class="sm-heading"> | synopsis</span></h1>
+                    <p> From building web applications to crafting artisan hot sauces, I thrive on the challenge of creating synergistic results from seemingly disparate or random elements. Although I primarily focus on growing my skills in HTML, CSS, JavaScript and the MERN Stack, I also enjoy learning new or different technologies. Most recently, I've been learning about Open Source and Web3 Development. <br/>
+                    When not studying as a computer programming student or building web applications, I can be found crafting new blends of fermented hot sauces, exploring the nearest mountain trail or canoodling on the couch with my feline overlords, Darth and Vader.</p>
+                     
+                    <a href="/info/ameliahill-resume-bullets.pdf" class="container-btn">Resume</a> 
+                </div>
+            <div class="graphics-container">
+                <div class="image-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="outer"></div>
+                    <div class="inner"></div>
+                    <div class="about-img"><img src="/img/amy2.png" alt="" class="about-img"></div>
+                </div>
             </div>
+            </div> 
+          
         </section>
       
-        <section class="section" id="work" >
+        <section class="section" id="projects" >
             <div class="container" data-aos="fade-up" data-aos-duration="1500">
-                <h1 class="lg-heading">Work <span class="sm-heading"> | Featured Projects</h3></span></h1>
+                <h1 class="lg-heading">Projects <span class="sm-heading"> | Building Applications</h3></span></h1>
                 
                 <div class="projects">
-
                     <div class="projects-item">
                         <div class="projects-description">
                             <h1 class="project-type">React.js</h1>
-                            <h1>Alan AI News Reader</h1>
-                            <p>News Application integrated with the Alan Conversational Voice AI Platform.</p>
+                            <h1>Momentum Clone</h1>
+                            <p>Productivity Application</p>
                             <div class="ul-container">
                                 <ul>
                                     <li>React.js</li>
-                                    <li>Alan AI</li>
-                                    <li>Materialize CSS</li>
+                                    <li>CSS3</li>
+                                    <li>Node.js</li>
+                                    <li>OpenWeather API</li>
+                                    <li>Unsplash API</li>
+                                    <li>DailyQuote API</li>
                                 </ul>
                             </div>
                             <div class="project-btns">
-                                <a href="https://www.voice-newsreader.com" target="_blank" rel="noopener">Demo</a>
-                                <a href="https://github.com/amehi4yus/react-news-reader" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                                <a href="https://www.momentum-clone.com" target="_blank" rel="noopener">Demo</a>
+                                <a href="https://github.com/amehi4yus/react-momentum-clone" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <div class="projects-image">
-                            <a href="https://www.voice-newsreader.com" target="_blank" rel="noopener">
-                                <img src="img/alan.png" alt="project">
+                            <a href="https://www.momentum-clone.com" target="_blank" rel="noopener">
+                                <img src="img/momentum.png" alt="project">
                                 <div class="overlay"></div>
                             </a>
                         </div>
-                    </div>
+                    </div>     
 
                     <div class="projects-item">
                         <div class="projects-image">
@@ -215,8 +239,7 @@
                                     <li>Node.js</li>
                                     <li>Express.js</li>
                                     <li>MongoDB</li>
-                                    <li>JWT Authentification</li>
-                                    <li>React-Bootstrap</li>
+                                    <li>JWT Authentication</li>
                                 </ul>
                             </div>
                             <div class="project-btns">
@@ -229,51 +252,50 @@
                     <div class="projects-item">
                         <div class="projects-description">
                             <h1 class="project-type">React.js</h1>
-                            <h1>Momentum Clone</h1>
-                            <p>Productivity Application</p>
+                            <h1>Alan AI News Reader</h1>
+                            <p>News Application integrated with the Alan Conversational Voice AI Platform.</p>
                             <div class="ul-container">
                                 <ul>
                                     <li>React.js</li>
-                                    <li>CSS3</li>
-                                    <li>Node.js</li>
-                                    <li>OpenWeather API</li>
-                                    <li>Unsplash API</li>
-                                    <li>DailyQuote API</li>
+                                    <li>Alan AI</li>
+                                    <li>Materialize CSS</li>
                                 </ul>
                             </div>
                             <div class="project-btns">
-                                <a href="https://www.momentum-clone.com" target="_blank" rel="noopener">Demo</a>
-                                <a href="https://github.com/amehi4yus/react-momentum-clone" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                                <a href="https://www.voice-newsreader.com" target="_blank" rel="noopener">Demo</a>
+                                <a href="https://github.com/amehi4yus/react-news-reader" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                         <div class="projects-image">
-                            <a href="https://www.momentum-clone.com" target="_blank" rel="noopener">
-                                <img src="img/momentum.png" alt="project">
+                            <a href="https://www.voice-newsreader.com" target="_blank" rel="noopener">
+                                <img src="img/alan.png" alt="project">
                                 <div class="overlay"></div>
                             </a>
                         </div>
-                    </div>     
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section" id="skills" >
             <div class="container" data-aos="fade-up" data-aos-duration="1500">
-                <h1 class="lg-heading">Technologies<span class="sm-heading"> | what i can do</span></h1>
+                <h1 class="lg-heading">Skills<span class="sm-heading"> | what i can do</span></h1>
                 <div class="skills">
-                    <div><i class="fab fa-html5"></i><span class="badge">HTML5</span></div>
-                    <div><i class="fab fa-css3-alt"></i><span class="badge">CSS3</span></div>
-                    <div><i class="fab fa-sass"></i><span class="badge">SASS</span></div>
-                    <div><i class="fab fa-bootstrap"></i><span class="badge">Bootstrap</span></div>
-                    <div><i class="fab fa-js"></i><span class="badge">Javascript</span></div>
-                    <div><i class="fab fa-react"></i><span class="badge">React</span></div>
-                    <div><i class="fab fa-node-js"></i><span class="badge">Node.js</span></div>
-                    <div><img src="img/express.svg" alt=""><span class="badge">Express.js</span></div>
-                    <div><i class="fas fa-database"></i><span class="badge">MongoDB</span></div>
+                    <div>
+                        <span class="icon"><i class="fab fa-html5"></i></span>
+                        <span class="badge">HTML5</span>
+                    </div>
+                    <div>   <span class="icon"><i class="fab fa-css3-alt"></i></span><span class="badge">CSS3</span></div>
+                    <div>   <span class="icon"><i class="fab fa-sass"></i></span><span class="badge">SASS</span></div>
+                    <div>   <span class="icon"><i class="fab fa-js"></i></span><span class="badge">Javascript</span></div>
+                    <div>   <span class="icon"><i class="fab fa-react"></i></span><span class="badge">React</span></div>
+                    <div>   <span class="icon"><i class="fab fa-node-js"></i></span><span class="badge">Node.js</span></div>
+                    <div>   <span class="icon"><img src="img/express.svg" alt=""></span><span class="badge">Express.js</span></div>
+                    <div>   <span class="icon"><i class="fas fa-database"></i></span><span class="badge">MongoDB</span></div>
                 </div>
             </div>
         </section>
-
+        
         <section class="section" id="contact">
             <div class="container" data-aos="fade-up" data-aos-duration="1500">
                 <h1 class="lg-heading">Contact<span class="sm-heading"> | Get In Touch</span></h1>
@@ -301,21 +323,19 @@
             </div>
 
             <div class="social-icons">
-                <div class="top" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
+                <div >
                     <a href="https://github.com/amehi0index" >
                         <span class="icon-span"><i class="fab fa-github"></i></span>
                         <span class="text-span">Github</span>
                     </a>
                 </div>
 
-                <div class="bottom" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" >
+                <div>
                     <a href="https://www.linkedin.com/in/amelia-hill-1648a6227" >
                         <span class="icon-span"><i class="fab fa-linkedin"></i></span>
                         <span class="text-span">LinkedIn</span>
                     </a>
                 </div>
-
-               
             </div>
         </section>
     </main>
@@ -324,7 +344,7 @@
         <a class="top-btn" id="top">
             <i class="fas fa-angle-double-up"></i>
         </a>
-        <div class="copyright-info">Copyright &copy; 2022 <span id="copyright-name">Designed by Amelia Hill </span></div>
+        <div class="copyright-info">Copyright &copy; 2022 <span id="copyright-name">Designed and Built by Amelia Hill </span></div>
     </footer>
 
     <script src="./js/main.js"></script>

@@ -3,10 +3,10 @@
   flex-direction: column;
   margin-top: 20px;
 
-  &-item {
+  .projects-item {
+    margin: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 10px;
 
     .projects-description {
       display: flex;
