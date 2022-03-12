@@ -5,10 +5,11 @@
 
   .projects-item {
     margin: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    display: flex;
+    //grid-template-columns: 1fr 1fr;
+    
     .projects-description {
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -84,6 +85,7 @@
     }
 
     .projects-image {
+      width: 50%;
       position: relative;
       img {
         width: 100%;

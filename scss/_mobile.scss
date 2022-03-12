@@ -384,6 +384,12 @@
     scroll-padding-top: 100px;
   }
 
+  .container {
+    width:98%;
+    max-width:98%;
+  }
+
+
   //MENU OVERLAY
   .navbar-menu {
     .hide {
@@ -531,85 +537,63 @@
     }
   }
 
-  #projects {
-    .projects-item {
-      position: relative;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      margin: 5px;
-      max-height: 20%;
-      min-height: 20%;
+  #projects{
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
-      .projects-description {
-        padding-top: 15px;
-        background: rgba(0, 0, 0, 0.94);
-        opacity: 1;
-        transition: opacity 1s ease;
+    .projects-description{
+      padding: 20px;
+      width: 100%;
+      .project-type {
+   
+        width: 100%;
+        text-align: center;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 24px;
+        //border-radius: 4px;
+        //background:#610163;
+        background: url('../img/bullseye-gradient.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 1.2;
+      }
 
-        grid-column: 1 / 1;
-        grid-row: 1/1;
-        z-index: 3;
+      h1 {
+        margin-top: 10px;
+        font-size: 16px;
+      }
 
-        &:hover,
-        &:focus {
-          opacity: 1;
-          //transform: scale(0.98);
-        }
+      p {
+        font-size: 0.9em;
+        margin: 5px 0;
+        padding: 0;
+      }
 
-        &-touch {
-          opacity: 0;
-          transform: scale(0.98);
-        }
-
-        h1 {
-          margin-top: 10px;
-          font-size: 18px;
-        }
-
-        p {
-          font-size: 0.9em;
-          margin: 5px 0;
-          padding: 0;
-        }
-
-        ul {
+      .ul-container {
+        width:80%;
+         ul {
           li {
             font-size: 0.9em;
           }
         }
+      }
+     
 
-        .project-btns {
-          a {
-            font-size: 0.75em;
-            margin-bottom: 20px;
+      .project-btns {
+        a {
+          font-size: 0.75em;
+          margin-bottom: 20px;
 
-            i {
-              font-size: 18px;
-            }
+          i {
+            font-size: 18px;
           }
         }
       }
-
-      .projects-image {
-        position: absolute;
-        bottom: 15px;
-        right: 15px;
-        width: 90px;
-        height: 80px;
-        z-index: 100;
-
-        img {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          z-index: 200;
-        }
-
-        .overlay {
-          z-index: -1;
-        }
-      }
+    }
+    .projects-image{
+      display: none;
     }
   }
 
