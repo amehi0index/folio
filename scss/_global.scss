@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #eff0f1;
+    overflow-x: hidden;
+  }
+  
+  .page-bg {
+    width: 100%;
+    height: 100%;
+    background: //url('../img/background-animation.svg'),
+      radial-gradient(
+      ellipse at center,
+      rgba(128, 0, 128, 1) 0%,
+      rgba(0, 0, 0, 1) 68%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+  
+  .hero-container {
+    margin: 0 auto;
+    width: 82%;
+    max-width: 82%;
+    min-height: calc(100vh + 8vh);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 15px;
+    //animation: fadein 5s;
+  
+    h1 {
+      font-size: 4.5rem;
+      line-height: 1.2;
+    }
+  
+    h3 {
+      line-height: 1.5;
+      font-size: 1.5em;
+      width: 600px;
+      margin-bottom: 15px;
+      span {
+        color: $secondary-color;
+        font-weight: 900;
+      }
+    }
+  
+    p {
+      color: rgb(184, 179, 179);
+      width: 60%;
+    }
+  
+    .hero-btns {
+      display: flex;
+  
+      .contact-btn {
+        background: transparent;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
+        margin-left: 15px;
+  
+        &:hover {
+          background: #4f0051;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  .container {
+    width: 82%;
+    max-width: 82%;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: auto;
+  
+    h1 {
+      color: #4f0051;
+      text-transform: lowercase;
+      font-size: 50px;
+      margin-top: 10px;
+    }
+  
+    h2 {
+      color: grey;
+      text-transform: lowercase;
+    }
+    .sm-heading {
+      color: #eff0f1;
+      line-height: 0.6;
+      padding-bottom: 25px;
+      text-transform: lowercase;
+      font-size: 48px;
+      font-weight: 100;
+    }
+    h6 {
+      color: #4f0051;
+    }
+  }
+  
+  .container-btn {
+    max-width: 140px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    background: #4f0051;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 1px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 32px;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: all 0.9s ease;
+  
+    &:hover {
+      background: transparent;
+      border: 2px solid $secondary-color;
+      color: $secondary-color;
+    }
+  }
+  
+  //ALL SECTIONS
+  .section {
+    position: relative;
+    scroll-snap-align: start;
+    padding: 140px 0;
+  
+    &:nth-of-type(odd) {
+      background: rgba(0, 0, 0, 0.2);
+      clip-path: polygon(0 13%, 100% 1%, 100% 85%, 0% 100%);
+    }
+  
+    & p {
+      color: $secondary-text-color;
+      max-width: 790px;
+    }
+  }
+  
+  //FOOTER
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  font-size: 16px;
+  padding: 15px;
+  background: rgba(54, 52, 52, 0.2);
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+
+  .icons {
+    margin-top: 3rem;
+
+    a {
+      display: inline-block;
+      padding: 0.4rem;
+      margin: 30px 10px;
+      width: 30px;
+      color: $secondary-text-color;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $secondary-color;
+        opacity: 0.7;
+        @include easeOut();
+      }
+    }
+  }
+
+  .copyright-info {
+    position: absolute;
+    bottom: 10%;
+    font-size: 12px;
+
+    #copyright-name {
+      color: $light-purple;
+      margin-left: 3px;
+      font-weight: 500;
+    }
+  }
+
+  .top-btn {
+    position: absolute;
+    bottom: 8%;
+    right: 4.6%;
+    color: rgba(50, 50, 50, 0.4);
+    font-size: 24px;
+    padding: 5px 20px;
+    border-radius: 2px;
+    background: transparent;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary-color;
+      transform: translateY(-20px);
+      //background: rgba(50, 50, 50, 0.2);
+    }
+  }
+}
+
+/*SCROLL BAR -Chrome, Edge, and Safari */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+  border-bottom-color: rgb(73, 71, 71);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(50, 50, 50, 0.4);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(50, 50, 50, 0.4);
+}
+
+/*SCROLL BAR - Firefox*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(50, 50, 50, 0.4) black;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

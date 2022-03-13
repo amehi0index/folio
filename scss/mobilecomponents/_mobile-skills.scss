@@ -1,0 +1,41 @@
+//Large Tablet
+@include mediaXl {
+}
+
+//TABLET
+@include mediaMd {
+  #skills {
+    .skills {
+      width: 100%;
+      padding-bottom: 100px;
+      div {
+        padding: 20px 15px;
+
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+//PHONES
+@include mediaSm { 
+  #skills {
+    padding-bottom: 0;
+    .skills {
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+
+      div {
+        height: 5rem;
+        width: 5.3rem;
+
+        i {
+          font-size: 24px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}

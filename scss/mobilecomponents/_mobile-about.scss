@@ -1,0 +1,102 @@
+//Large Tablet
+@include mediaXl {
+  #about {
+    .container {
+      flex-direction: column;
+    }
+    
+    .about-text {
+      margin-bottom: 200px;
+    }
+    
+    .graphics-container {
+      max-width: 100%;
+      width: 100%;
+      justify-content: flex-end;
+    
+      .image-container {
+      //width: 35%;
+        .outer {
+          height: 300px;
+          width: 300px;
+        }
+    
+        .inner {
+          height: 225px;
+          width: 225px;
+        }
+      }
+    }
+  }
+}
+
+//TABLET
+@include mediaMd {
+  #about {
+    .container {
+      .graphics-container {
+        .image-container {
+          .outer {
+            height: 275px;
+            width: 275px;
+          }
+          .inner {
+            height: 210px;
+            width: 210px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//PHONES
+@include mediaSm {
+  #about {
+    .container {
+      .about-text {
+        margin-bottom: 200px;
+        p {
+          //width: 95%;
+          padding-bottom:20px;
+          text-align: justify;
+          text-justify:none;
+        }
+      }
+    
+      .graphics-container {
+        margin-top: 40px;
+        .image-container {
+          .outer {
+            height: 215px;
+            width: 215px;
+          }
+    
+          .inner {
+            height: 160px;
+            width: 160px;
+            margin-top: 2px;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    
+    .about-text {
+       margin-bottom: 0px;
+    }
+    .graphics-container {
+      .image-container {
+        .outer {
+          height: 100px;
+          width: 100px;
+        }
+    
+        .inner {
+          height: 175px;
+          width: 175px;
+        }
+      }
+    }
+  }
+}
