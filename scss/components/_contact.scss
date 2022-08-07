@@ -1,0 +1,155 @@
+//CONTACT SECTION
+#contact {
+    position: relative;
+  
+    .contact {
+      .contact-form {
+        color: rgb(184, 179, 179);
+        width: 60%;
+        margin-top: 25px;
+  
+        label {
+          font-size: 14px;
+        }
+  
+        .main-group {
+          display: flex;
+          justify-content: space-between;
+          .form-group {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+  
+            label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              transition: all 0.7s ease;
+            }
+  
+            input {
+              color: #ffff;
+              padding: 15px 0;
+              background: transparent;
+              outline: none;
+              border: none;
+              border-bottom: 1px solid rgb(73, 71, 71);
+              height: 15px;
+              transition: all 0.7s ease;
+  
+              &:focus + label,
+              &:valid + label {
+                top: -24px;
+              }
+            }
+          }
+        }
+  
+        .message-group {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-top: 25px;
+          position: relative;
+  
+          #message {
+            font-family: 'Monserrat', sans-serif;
+            resize: none;
+            color: #ffff;
+            border: none;
+            border-bottom: 1px solid rgb(73, 71, 71);
+            outline: none;
+            background: rgba(10, 10, 10, 0.1);
+            height: 20px;
+            transition: all 0.7s ease;
+  
+            &:focus {
+              height: 50px;
+              border-bottom: 2px solid rgb(73, 71, 71);
+            }
+          }
+        }
+  
+        .submit-btn {
+          max-width: 140px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          background: $secondary-color;
+          outline: none;
+          border: 2px solid $secondary-color;
+          padding: 12px 20px;
+          border-radius: 1px;
+          font-weight: 500;
+          margin-top: 32px;
+          color: #fff;
+          letter-spacing: 2px;
+          cursor: pointer;
+          transition: all 0.9s ease;
+  
+          &:hover {
+            background: transparent;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  
+    .social-icons {
+      position: fixed;
+      top: 65%;
+      right: 4.6%;
+      display: flex;
+      writing-mode: vertical-rl;
+      text-orientation: sideways-right;
+      height: 60%;
+      transform: translateY(-50%);
+      font-size: 14px;
+      color: $light-purple;
+      letter-spacing: 2px;
+      line-height: 1;
+      border: none;
+      visibility: visible;
+  
+      .top,
+      .bottom {
+        height: 150px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 2px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+        transition: 0.9s 0.9s;
+  
+        &:hover,
+        &:focus,
+        &:active {
+          color: $secondary-color;
+          @include easeOut();
+        }
+  
+        .text-span {
+          margin: 5px;
+          font-weight: 700;
+          color: $secondary-color;
+        }
+  
+        .icon-span {
+          font-size: 18px;
+          border: 3px solid $secondary-color;
+          border-radius: 2px;
+          padding: 6px;
+          text-align: center;
+        }
+      }
+    }
+  }

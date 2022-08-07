@@ -1,0 +1,60 @@
+//Large Tablet
+@include mediaXl {
+}
+
+//TABLET
+@include mediaMd {
+}
+
+//PHONES
+@include mediaSm {
+    #contact {
+        .contact {
+          .contact-form {
+            width:100%;
+    
+            .form-group {
+              width: 100%;
+              input {
+                padding: 20px 0;
+              }
+            }
+    
+            .main-group {
+              flex-direction: column;
+              .form-group {
+                width: 100%;
+                margin: 10px 0;
+              }
+            }
+          }
+        }
+    
+        .social-icons {
+          //right: 0;
+          writing-mode: horizontal-tb;
+          text-orientation: upright;
+          flex-direction: column;
+    
+          .top,
+          .bottom {
+            min-height: 50px;
+            max-height: 50px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+          }
+    
+          a {
+            .text-span {
+              display: none;
+            }
+    
+            .icon-span {
+              font-size: 18px;
+              border: 2px solid transparent;
+            }
+          }
+        }
+      }
+}
